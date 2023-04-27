@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Layout</title>
     <link rel="stylesheet" href="./css/estilo.css">
+
+    <script src="./js/script.js"></script>
+
 </head>
 
 <body>
@@ -57,15 +60,15 @@
             <a href="#"><img src="./img/social-3.png" alt="Logo twitter"></a> -->
         </nav>
         <div>
-            <form action="index.html" method="POST" onsubmit="return true">
+            <form action="index.html" method="POST" onsubmit="return false">
                 <fieldset>
                     <legend>Login</legend>
                     <div>
-                        <label for="idEmail">Email</label>
+                        <label class="lbl-txt" for="idEmail">Email</label>
                         <input type="email" name="txtEmail" id="idEmail" placeholder="Email" required>
                     </div>
                     <div>
-                        <label for="idPass">Senha</label>
+                        <label class="lbl-txt" for="idPass">Senha</label>
                         <input type="password" name="txtPass" id="idPass" placeholder="Pass"
                             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                             title="Precisa conter no mínimo 8 caractéres e um em maiusculo e pelo menos um em minusculo.">
@@ -85,8 +88,8 @@
                         </select>
                     </fieldset>
                     </div>
-                    <div>
-                        <button type="submit">Login</button>
+                    <div class="btn">
+                        <button onclick="document.write('Olá mundo!')" type="submit">Login</button>
                         <button type="reset">Limpar</button>
                     </div>
                 </fieldset>
